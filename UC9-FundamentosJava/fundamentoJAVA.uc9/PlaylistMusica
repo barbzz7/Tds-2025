@@ -1,0 +1,21 @@
+public class playlistMusical {
+    public static void main(String[] args) {
+         List<String> playlist = new ArrayList<>();
+         
+         playlist.add("a-ha Take on me");
+         playlist.add("November rain");
+         playlist.add("Creep");
+         playlist.add("californication");
+         
+         playlist.set(0, "Creep");
+         System.out.println(playlist);
+         
+         boolean existe = playlist.contains("lofi beats");
+         System.out.println("Existe 'lofi beats'? " + existe);
+         
+         int posicao = playlist.indexOf("jazz nigth");
+         System.out.println("Posicao de jazz nigth" + posicao);
+    }
+}
+
+

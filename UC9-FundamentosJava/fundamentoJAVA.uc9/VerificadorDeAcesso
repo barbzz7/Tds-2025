@@ -1,0 +1,11 @@
+public class VerificadorDeAcesso {
+    public static void main(String[] args) {
+        boolean UsuarioAtivo = true;
+         if (UsuarioAtivo){
+             System.out.println("Acesso Liberado");
+         } else { 
+             System.out.println("Acesso Negado");
+         }
+               
+    }
+}

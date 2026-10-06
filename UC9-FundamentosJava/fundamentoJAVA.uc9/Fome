@@ -1,0 +1,13 @@
+public class FomeMaiorOuIgual {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        System.out.println(" Digite um numero de 0 a 10 ");
+        int fome = entrada.nextInt();
+        if (fome >= 8){
+            System.out.println("Fome Extrema, Você realmente come muito!!");
+        }else{
+            System.out.println("Razoavel");
+         }
+        entrada.close();
+}
+}

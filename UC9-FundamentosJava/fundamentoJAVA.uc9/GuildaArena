@@ -1,0 +1,28 @@
+public class guildaArena {
+    public static void main(String[] args) {
+        
+        Map<String, Double> magos = new HashMap<>();
+        
+        magos.put("Eldrin", 750.0);
+         magos.put("Mira", 920.0);
+         magos.put("Thalos", 860.0);
+         
+         System.out.println("Qual é o poder de Mira?");
+        System.out.println("Poder de Mira: " + magos.get("Mira"));
+
+         System.out.println("-----------------------------");
+         
+        
+        magos.put("Eldrin", 800.0);
+        System.out.println("Magos e seus poderes:");
+        for(String nome : magos.keySet()){
+            System.out.println(nome + " -> " + magos.get(nome));
+        }
+         System.out.println("------------------------------");
+         System.out.println("Quantidade de magos na Guilda");
+        System.out.println(magos.size());
+          
+    }
+  
+        
+}

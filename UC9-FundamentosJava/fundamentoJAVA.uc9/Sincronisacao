@@ -1,0 +1,17 @@
+public class sincronizacaoDoPiloto {
+     public static void main(String[] args) {
+     Scanner entrada = new Scanner(System.in);
+         System.out.println("sincronização");
+         int sincronia = entrada.nextInt();
+         
+         if (sincronia < 40){
+                      System.out.println("Sincronização insuficiente!");
+                  }else if (sincronia <= 40 && sincronia <= 79){
+                      System.out.println("sincronização estavel");
+                  }
+         
+         if (sincronia >= 80){
+             System.out.println("Sincronização maxima, cuidado!");
+         }
+     }
+}

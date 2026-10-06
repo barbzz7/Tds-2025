@@ -1,0 +1,20 @@
+public class excListaAmigos {
+    public static void main(String[] args) {
+        List<String> amigos = new ArrayList<>();
+        
+        amigos.add("dudu");
+        amigos.add("luisito");
+        amigos.add("sidzoka");
+        amigos.add("jean");
+        amigos.add("kaleuzada");
+        
+        System.out.println("Quantidade de amigos: " + amigos.size());
+        
+        System.out.println("Primeiro amigo: " + amigos.get(0));
+        
+        for(String nome : amigos){
+            System.out.println("Nome: " + nome);
+        }
+            
+    }
+}

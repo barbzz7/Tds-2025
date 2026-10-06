@@ -1,0 +1,50 @@
+public class NiveisEPortais {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        System.out.println(" Digite seu nivel de alma: ");
+        System.out.println(" Digite seu nivel de coragem: ");
+        System.out.println(" Digite seu nivel de energia ");
+        int alma = entrada.nextInt();
+        int coragem = entrada.nextInt();
+        int energia = entrada.nextInt();
+        
+        int portaisAbertos = 0;
+        
+        
+        if (alma >= 70 ){
+            System.out.println("Parabens voce abriu o portal de Frieren.");
+            portaisAbertos = portaisAbertos + 1;
+        }else{
+            System.out.println("Seu niivel está baixo para esse portal ainda, tente os outros.");
+            
+        }
+         if (coragem > 50){
+              System.out.println("Parabens, portal de Demon Slayer aberto.");
+              portaisAbertos = portaisAbertos + 1;
+         }else {
+             System.out.println("Voce nao tem coragem o suficiente, tente os outros.");
+         }
+         
+        if (energia != 0){
+         System.out.println("Voce liberou o portal de Fullmetal Britherhood");
+         portaisAbertos = portaisAbertos + 1;
+        }else{
+         System.out.println("Sua energia está abaixo de zero, tente os outros.");
+        }
+        
+        System.out.println(" \n == RESULTADO FINAL ==+");
+        if (portaisAbertos == 3){
+            System.out.println(" Voce abriu todos os portais!.");
+        }
+        if (portaisAbertos == 2){
+            System.out.println("Voce abriu 2 portais");
+        }
+        if (portaisAbertos == 1){
+            System.out.println("Voce abriu 1 portal");
+        }
+        if (portaisAbertos == 0){
+            System.out.println("Voce é uma vergonha!");
+        }
+        entrada.close();  
+    }
+}

@@ -1,0 +1,19 @@
+public class EstresseDaRatsuko {
+    public static void main(String[] args) {
+         Scanner entrada = new Scanner(System.in);
+         System.out.println("Nivel de estresse de Ratsuko?: ");
+             int estresse = entrada.nextInt();
+             System.out.println("Que dia é hoje? ");
+             int diaSemana = entrada.nextInt();
+             System.out.println("O chefe ton gritou com ela hoje?");
+             boolean gritou = entrada.nextBoolean();
+             
+             boolean estressseAlto = estresse > 70;
+             boolean motivoExtra = (diaSemana ==5) || gritou;
+             //boolean EntraModoMetal = estressseAlto 
+             
+                 
+                  
+    }
+     
+}

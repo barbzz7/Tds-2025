@@ -1,0 +1,18 @@
+public class EntradaDados {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+       //cria o leitor do teclado
+       //sout (atalho para System.out.println..)
+        System.out.println(" Digite seu nome: ");
+        // lê uma linha de texto 
+        String nome = entrada.nextLine();
+        
+        
+        System.out.println(" Digite sua idade ");
+        // le um inteiro 
+        int idade = entrada.nextInt();
+        System.out.println("Ola " + nome + ", você tem " + idade + " anos.");
+        entrada.close(); //boa pratica: fechar o scanner
+        
+    }
+}

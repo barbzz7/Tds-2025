@@ -1,0 +1,19 @@
+public class MagiaProibida {
+    public static void main(String[] args) {
+         Scanner entrada = new Scanner(System.in);
+         System.out.println("Mana atual (0 a 100): ");
+                  int mana = entrada.nextInt();
+
+         System.out.println("distancia dp inimigo? ");
+                 int distancia = entrada.nextInt();
+
+         boolean manaBaixa = mana < 20;
+         boolean inimigoPerto = distancia < 5;
+          boolean condicaoPerigosa = manaBaixa || inimigoPerto;
+                  boolean podeUsar = !condicaoPerigosa;
+                  System.out.println("frieren pode usar magia proibida? " + podeUsar);
+       
+         
+         entrada.close();  
+    }
+}

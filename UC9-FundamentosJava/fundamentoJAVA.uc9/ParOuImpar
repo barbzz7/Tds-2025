@@ -1,0 +1,9 @@
+public class ParouImpar {
+    public static void main(String[] args) {
+      int numero = 15;
+      // um numero é par se o resto da divisao é 0
+      boolean ehPar = (numero % 2 == 0);
+        System.out.println("É par: " + ehPar);
+      
+    }
+}

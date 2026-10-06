@@ -1,0 +1,27 @@
+public class exemploMap {
+    public static void main(String[] args) {
+        //criando agenda de notas
+        //cada aluno tem um nome(chave) e uma nota valor
+        //map <chave, valor>
+        //hashap = rapidpo, nao mantem a ordem
+        
+        Map<String, Double> notas = new HashMap<>();
+        
+        //put(chave, valor) - adiciona ou atualiza entradas
+        notas.put("ana", 9.5);
+        notas.put("bruno", 7.8);
+        notas.put("carlos", 8.3);
+        
+        //se a chave ja existe, o valor é atualizado(substituuido)
+        notas.put("ana", 9.8); //ana foi chorar 3 decimos
+        //get(chave)- recupera o valor associado a chave
+        //aqui pegamos a nota do aluno. noi caso a ana
+        System.out.println("Nota da Ana: " + notas.get("ana"));
+        //ai podemos pagar todas as chaves tmbm com o keyset()
+        //podemos usar o fereach para imprimir chave = valor correspondente
+        for(String nome : notas.keySet()){
+            System.out.println(nome + " -> " + notas.get(nome));
+        }
+        
+    }
+}

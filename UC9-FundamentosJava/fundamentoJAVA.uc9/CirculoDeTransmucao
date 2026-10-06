@@ -1,0 +1,9 @@
+public class circulosDeTranmucao {
+     public static void main(String[] args) {
+         int circulo = 1;
+
+        while (circulo <= 10) {
+            System.out.println(circulo + " está sendo criado");
+            circulo++;
+        }
+}}

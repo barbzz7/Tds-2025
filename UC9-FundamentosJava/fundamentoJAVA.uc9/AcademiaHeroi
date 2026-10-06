@@ -1,0 +1,33 @@
+public class AcademioHeroi {
+    public static void main(String[] args) {
+         Scanner entrada = new Scanner(System.in);
+         System.out.println("digite sua idade: ");
+           int idade = entrada.nextInt();
+             System.out.println("Qual seu nivel de poder? ");
+             int poder = entrada.nextInt();
+             System.out.println("Nivel de controle emocional?");
+             int controle = entrada.nextInt();
+             
+             
+             boolean Nidade = idade >= 15;
+             boolean Npoder = poder >= 50;
+             
+             if (poder < 80 && controle >= 60 && idade >= 15 ){
+                 System.out.println("Parabens você foi aprovado ");
+             }else{
+                 System.out.println("Reprovado");
+             }
+             
+             if (poder >= 80 && idade >= 15){
+                 System.out.println("parabens voce foi aprovado ");
+             }else{
+             System.out.println("voce nao serve pra ser heroi");
+             }
+              entrada.close();  
+    }
+}
+/* boolean aprovado = 
+idade >= 15 &&
+poder >= 50 &&
+(poder <80 || 
+*/

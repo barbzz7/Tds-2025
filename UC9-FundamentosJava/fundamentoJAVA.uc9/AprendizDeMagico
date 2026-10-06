@@ -1,0 +1,15 @@
+public class AprendizMagico {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+         System.out.println("Vamos ver o que você tem, me diga qual é a potencia do seu poder? ");
+                  int poderPotencia = entrada.nextInt();
+                  
+                  if (poderPotencia < 30){
+                      System.out.println("É so isso que você pode fazer? Nivel aprendiz. sua magia está fraca!");
+                  }else if (poderPotencia <= 30 && poderPotencia <= 70){
+                      System.out.println("Magia mediana, você é nivel Aventureiro");
+                  }else {
+                      System.out.println("Magia Avançada");
+                  }
+    }
+}

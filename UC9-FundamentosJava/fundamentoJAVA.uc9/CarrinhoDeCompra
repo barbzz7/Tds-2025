@@ -1,0 +1,23 @@
+public class carrinhosDeCompra {
+    public static void main(String[] args) {
+         List<String> carrinho = new ArrayList<>();
+         
+         carrinho.add("Doritos");
+          carrinho.add("molho cheedar");
+           carrinho.add("Carne moida");
+            carrinho.add("Cocacola");
+             carrinho.add("Salada");
+             
+             
+             
+             
+             for(String produtos : carrinho){
+            System.out.println("Produtos: " + produtos);
+             }
+             
+             carrinho.clear();
+             
+             
+             System.out.println("A lista esta vazia? " + carrinho.isEmpty());
+}
+}

@@ -1,0 +1,13 @@
+public class SalarioMensal {
+    public static void main(String[] args) {
+        // Valor da hora trabalhada (em reais)
+        double valorHora = 32.05;
+        // quantidade de horas trabalhadas 
+        double horasTrabalhadas = 160;
+        // calculo de salario total 
+        double salario = valorHora * horasTrabalhadas;
+        //exibe o resultado (sout)
+        System.out.println("Salário mensal: R$ " + salario);
+    }
+    
+}

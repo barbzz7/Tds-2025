@@ -1,0 +1,17 @@
+public class tangerinaRespiraçao {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+         System.out.println("diga-me seu nivel de concentração: ");
+          System.out.println("E seu nivel de energia: ");
+          
+          int concentracao = entrada.nextInt();
+          int energia = entrada.nextInt();
+          
+          if (concentracao >= 70 && energia > 50){
+              System.out.println("Tangerina pode usar a respiração da água");
+          }else {
+          System.out.println("Tangerina nao pode usar a tecnica ainda.");
+          }
+          
+    }
+}

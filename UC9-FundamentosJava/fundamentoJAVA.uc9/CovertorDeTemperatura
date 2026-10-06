@@ -1,0 +1,8 @@
+public class ConvertorDeTemperatura {
+
+    public static void main(String[] args) {
+        double calcio = 80;
+        double convertor = (calcio * 1.8) + 32;
+        System.out.println("Temperatura covertida: " + convertor);
+    }
+}

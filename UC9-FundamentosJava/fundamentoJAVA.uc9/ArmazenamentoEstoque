@@ -1,0 +1,11 @@
+public class AmarzenamentoEmEstoque {
+    public static void main(String[] args) {
+        int codProduto = 60897;
+        short quantidade = 788;
+        char categoria = 'E';
+        
+        System.out.println("Produto: " + codProduto 
+                         + " Quantidade em estoque: " + quantidade +
+                           " Categoria: " + categoria);
+    }
+}

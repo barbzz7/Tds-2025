@@ -1,0 +1,15 @@
+public class CartaDeViolet {
+     public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        System.out.println(" Digite um numero de palavras (300 ou mais): ");
+        
+        int palavras = entrada.nextInt();
+        if (palavras >= 300){
+            System.out.println("Um texto desse tamanho!? Eu nao vou ler.");
+        }else{
+            System.out.println("");
+         }
+        entrada.close();
+         }
+        
+}

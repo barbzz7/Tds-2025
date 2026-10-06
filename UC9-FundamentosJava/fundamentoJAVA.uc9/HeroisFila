@@ -1,0 +1,26 @@
+public class heroisFila {
+    public static void main(String[] args) {
+         List<String> filaHerois = new ArrayList<>();
+        
+         
+        filaHerois.add("homem aranha");
+         filaHerois.add("homem aranha");
+          filaHerois.add("flash");
+           filaHerois.add("batman");
+         
+           
+            System.out.println("Quantidade de herois: " + filaHerois.size());
+            
+            System.out.println("Primeiro heeroi: " + filaHerois.get(0));
+            
+             filaHerois.set(1, "Homen de ferro");
+         System.out.println(filaHerois);
+    
+         filaHerois.remove(0);
+         
+          for(String herois: filaHerois){
+            System.out.println("Herois ainda em espera: " + herois);
+             }
+    }       
+    
+}

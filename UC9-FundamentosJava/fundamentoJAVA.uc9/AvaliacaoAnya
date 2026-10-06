@@ -1,0 +1,16 @@
+public class avaliacaoAnya {
+     public static void main(String[] args) {
+     Scanner entrada = new Scanner(System.in);
+         System.out.println("Qual a nota que anya merece? ");
+         double notaEntrevista = entrada.nextDouble();
+          if (notaEntrevista >= 9){
+              System.out.println("Elegante!");
+          } else if (notaEntrevista >= 7){
+              System.out.println("Anya foi aprovada!");
+          }else {
+              System.out.println("Anya fez !");
+          }
+         
+         
+         
+}}
