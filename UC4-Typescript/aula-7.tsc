@@ -1,0 +1,58 @@
+// Classe Gato
+class Gato {
+
+    // A energia é privada.
+    // Não pode ser alterada diretamente fora da classe.
+    private energia: number;
+
+    // O gato começa com 100 de energia
+    constructor() {
+        this.energia = 100;
+    }
+
+    // Método para brincar
+    public brincar(): void {
+
+        // Verifica se ainda existe energia
+        if (this.energia > 0) {
+
+            // Diminui 20 de energia
+            this.energia -= 20;
+
+            console.log("O gato brincou e ficou mais cansado.");
+
+        } else {
+            console.log("O gato está sem energia. Ele precisa dormir!");
+        }
+    }
+
+    // Método para recuperar a energia
+    public dormir(): void {
+
+        // Volta a energia para 100
+        this.energia = 100;
+
+        console.log("O gato dormiu e recuperou a energia!");
+    }
+
+    // Método para mostrar a energia atual
+    public mostrarEnergia(): void {
+        console.log(`Energia atual do gato: ${this.energia}`);
+    }
+}
+
+
+// Cria um objeto Gato
+const gato = new Gato();
+
+// O gato brinca e perde 20 de energia
+gato.brincar();
+
+// Mostra a energia atual: 80
+gato.mostrarEnergia();
+
+// O gato dorme e recupera a energia para 100
+gato.dormir();
+
+// Mostra novamente a energia
+gato.mostrarEnergia();
