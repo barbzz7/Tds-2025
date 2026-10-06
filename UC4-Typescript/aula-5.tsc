@@ -1,0 +1,140 @@
+// =====================================================
+// PESQUISA
+// =====================================================
+
+/*
+O que acontece se todos os atributos de uma classe forem public?
+
+Significa que qualquer código externo, fora da classe,
+pode acessar e modificar diretamente esses atributos,
+sem restrições.
+
+
+Qual a diferença entre private e protected no TypeScript?
+
+PRIVATE:
+Só pode ser acessado dentro da própria classe.
+
+PROTECTED:
+Pode ser acessado dentro da própria classe e também
+pelas subclasses (classes que herdam dela).
+
+Código externo não consegue acessar diretamente
+atributos private ou protected.
+
+
+Exemplos reais de coisas que precisam de encapsulamento:
+
+- Senha do celular
+- Notas escolares online
+- Saldo bancário
+*/
+
+
+// =====================================================
+// CLASSE PESSOA
+// =====================================================
+
+class Pessoa {
+
+    // private impede que a idade seja alterada diretamente
+    // fora da classe
+    private idade: number;
+
+    // Define a idade inicial da pessoa
+    constructor(idadeInicial: number) {
+        this.idade = idadeInicial;
+    }
+
+    // Método público para aumentar a idade
+    public FazendoAniversario(): void {
+        this.idade++;
+    }
+
+    // Método público para mostrar a idade
+    public mostrarIdade(): void {
+        console.log(`Sua idade é: ${this.idade}`);
+    }
+}
+
+
+// Cria uma pessoa com 17 anos
+const pessoa = new Pessoa(17);
+
+// Chama o método para mostrar a idade
+pessoa.mostrarIdade();
+
+// A pessoa faz aniversário
+pessoa.FazendoAniversario();
+
+// Mostra a nova idade
+pessoa.mostrarIdade();
+
+
+// =====================================================
+// CLASSE CELULAR
+// =====================================================
+
+class celular {
+
+    // A bateria é privada e não pode ser alterada
+    // diretamente fora da classe
+    private niveldbateria: number;
+
+    // O celular começa com 100% de bateria
+    constructor() {
+        this.niveldbateria = 100;
+    }
+
+    // Método para usar o celular
+    public usar(): void {
+
+        // Diminui 5% da bateria
+        this.niveldbateria -= 5;
+
+        // Verifica se a bateria chegou a 20% ou menos
+        if (this.niveldbateria <= 20) {
+            console.log(`Bateria baixa: ${this.niveldbateria}%`);
+        } else {
+            console.log(
+                `Você usou o celular demais, dá um tempo: ${this.niveldbateria}%`
+            );
+        }
+    }
+
+    // Método para carregar o celular
+    public Carregar(): void {
+
+        // Aumenta 10% da bateria
+        this.niveldbateria += 10;
+
+        // Impede que a bateria passe de 100%
+        if (this.niveldbateria > 100) {
+            this.niveldbateria = 100;
+        }
+
+        console.log(
+            `Carregando... Bateria atual: ${this.niveldbateria}%`
+        );
+    }
+
+    // Método para mostrar a bateria atual
+    public mostrarBateria(): void {
+        console.log(
+            `Sua bateria atual é: ${this.niveldbateria}%`
+        );
+    }
+}
+
+
+// Cria um novo celular
+const Celular = new celular();
+
+// Usa o celular
+Celular.usar();
+
+// Mostra a bateria
+Celular.mostrarBateria();
+
+// Usa novamente
+Celular.usar();
