@@ -1,0 +1,73 @@
+*{margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    padding: 15%, 80%, 15%, 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ header img {
+    width: 10%;
+ }
+
+ header a{
+    color: rgb(1, 1, 133);
+    margin: 15px;
+ }
+
+ header i{
+    margin: 15;
+ }
+ a{
+    text-decoration: none;
+    font-size: large;
+ }
+
+ .Banner{
+    background-image: url(https://api.senacrs.com.br/bff/site-senac/v1/file/c9c81e3efea0125fbec1e8e6577aa97b9cc524.png);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: center;
+    
+ }
+
+.cursos{
+    height: 30vh;
+    display: flex;
+
+    display: flex;
+   justify-content: center;
+   align-items: center;
+     gap: 40px;
+    
+}
+.curso-imagem{
+    width:80px;
+    height: 80px;
+    border-radius: 50% ;
+    background-color: blue;
+    overflow: hidden;
+    object-fit: cover;
+    border: 5px solid orange;
+}
+.curso-imagem img{
+    height: 100%;
+
+}
+.borda-azul{
+    border: 5px solid blue;
+}
+
+.curso h3{
+    font-size: small;
+    font-weight: normal;
+}

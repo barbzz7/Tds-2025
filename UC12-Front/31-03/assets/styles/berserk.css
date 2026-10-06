@@ -1,0 +1,21 @@
+body{
+background-color: rgb(0, 0, 0); /*troca a cor do fundo*/
+color: aliceblue ; /*troca a cor da fonte*/
+font-family: Georgia, 'Times New Roman', Times, serif;}  /*escolhe font*/
+ 
+
+img {
+  width: 300px;
+  border-radius: 20px;
+  margin: 20px;}
+    
+     
+
+button{
+    background-color: rgb(231, 46, 46);
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    padding: 10px;
+}

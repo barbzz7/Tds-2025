@@ -1,0 +1,13 @@
+.container-pai{
+    background-color: rgb(161, 226, 226);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container-pai > div{
+    border-color: beige;
+    height: 20%;
+}

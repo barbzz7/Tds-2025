@@ -1,0 +1,89 @@
+/* button{
+    background-color: rgb(5, 128, 87);
+    color: bisque;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+button:hover{
+background-color: blueviolet;
+border-radius: 5px;
+transform: rotate(15deg);
+} */
+
+/*Criando anuimeção com @keiframes
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.fade-in {
+    animation: fadeIn 1s ease ;
+}
+
+
+@keyframes fadeOut{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+
+.fade-out{
+    animation: fadeOut 2s ease;
+}
+
+
+@keyframes slideIn {
+    from{transform: translateX(-100);}
+    to{transform: translateX(0);}
+}
+
+.slide-in{
+    animation: slideIn 1s ease;
+}
+
+@keyframes zoomIn{
+    from{transform: scale(0.5);}
+    to{transform: scale(1);}
+}
+
+.zoom-in{
+    animation: zommIn 0.6 ease;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.box {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.box.visible {
+    animation: slideIn 2s ease forwards;
+}*/
+
+
+body{
+    background-color: blueviolet;
+}
+
+div{
+    
+}

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: #000000;
+}
+@font-face {
+    font-family: "vampireWars";
+    src: url("../assets/fonts/VampireWars.otf");
+}
+header{
+    background-color: rgb(2, 2, 2);
+    padding: 15%, 80%, 15%, 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ header img {
+    
+    width: 4%;
+
+} 
+
+.btn-assistir {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-assistir:hover {
+    background-color: darkred;
+}
+.Banner h1 {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    color: rgb(231, 41, 41);
+    font-size: 40px;
+}
+.Banner h2 {
+    position: absolute;
+    top: 45%;
+    left:20%;
+    color: rgb(187, 182, 182);
+    font-size: 20px;
+    max-width: 500px;
+}
+.Banner h3{
+    position: absolute;
+    top: 54%;
+    left: 20%;
+    color: rgb(163, 162, 162);
+    font-size: 15px;
+    max-width: 500px;
+}
+
+ header a{
+    color: rgb(255, 253, 253);
+    margin: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+ }
+.Banner {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #000000;
+}.Banner img {
+    max-width:80%;
+    height: auto;
+    border-radius: 10px;
+}.content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    padding: 30px;
+    gap: 30px;
+}.movie {
+    flex:  300px; 
+    max-width: 400px;
+    background-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}.movie img {
+    width: 100%;
+    height: auto;
+     display: block;
+    margin: 0 auto;
+    
+}
+.cormorant-unicase-light {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cormorant-unicase-regular {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-unicase-medium {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cormorant-unicase-semibold {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cormorant-unicase-bold {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 700;
+  font-style: normal;
+}

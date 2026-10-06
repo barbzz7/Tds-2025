@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    background-color: rgb(131, 23, 158);
+    height: 30vh;
+    color: white;
+}
+
+.container-filho{
+    background-color: black;
+    width: 100px;
+    height: 50px;
+}
+
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin: 0px 10px;
+}
+
+img{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+/* Telas Mobile */
+@media (max-width:800px){
+    .container-pai{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .container-filho{
+        min-width: 30vw;
+        min-height: 30vw;
+    }
+    .hidden{
+        display: block;
+        background-color: rgb(119, 9, 245);
+        color: white;
+        opacity: 55%;
+        position: relative;
+    }
+    header nav{
+        display: none; 
+        background-color: rgb(231, 69, 231);
+        position: absolute;
+        top: 70px; 
+        right: -5px;
+        border-radius: 10px;
+        width: 40%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    header nav a{
+        display: block;
+        margin: 10px 0;
+        cursor: pointer;
+        color: white;
+    }
+
+    .hidden a{
+        cursor: pointer;
+        color: white;
+    }
+}

@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+
+.container-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.container-menu nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.container-menu nav a:hover {
+    color: blueviolet;
+}
+
+.logo {
+    width: 100px;
+}
+
+.Whats-link {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+
+.Whats-img {
+    width: 60px;
+
+
+}
+
+.cart-container{
+    
+    position: relative;
+}
+.cart-container span{
+    position: absolute ;
+    top: -5px;
+    right: -4px;
+    background-color: red;
+    font-size: 8px;
+    border-radius: 50%;
+    padding: 2px 4px;
+    color: white;
+}
+.menu-extra{
+    position: relative;
+    cursor: pointer;
+
+}
+
+.menu-extra i{
+color: white;
+font-size: 22px;    
+}
+
+
+
+.menu-dropdown{
+    position: absolute;
+     top: 35px;
+     right: 0;
+     background-color: black;
+     width: 188px;
+     display: none;
+     flex-direction: column;
+     border-radius: 8px;
+
+}
+
+
+.menu-dropdown a{
+    color: white;
+    text-decoration: none;
+    padding: 12px
+}
+
+.menu-extra:hover  .menu-dropdown{
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

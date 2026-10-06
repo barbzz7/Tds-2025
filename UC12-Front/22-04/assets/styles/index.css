@@ -1,0 +1,55 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: none;
+    text-align: center;
+    background-image: url('https://wallpapers.com/images/featured/papel-de-parede-para-celular-gratis-berserk-manga-w2be3dkn6rwpqw5f.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.active{
+    display: flex;
+
+
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to top, rgb(160, 160, 160), rgba(74, 77, 76, 0.822), rgba(0, 0, 0, 0.603));
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.151);
+    transition: 0.3s;
+}
+
+.card button {
+   background-color: #000;
+   color: #fff; 
+   border: none;
+   border-radius: 8px;
+   padding: 10px;
+   margin: 5px 0;
+   width: 80%;
+   cursor: pointer;
+   font-size: 14px;
+}
