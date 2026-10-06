@@ -1,0 +1,174 @@
+// =====================================================
+// EXERCÍCIO 1 - HERANÇA
+// =====================================================
+
+// Classe pai
+// Ela possui características que serão aproveitadas
+// pelas classes professor e aluno.
+class Pessoa5 {
+    nome: string;
+
+    constructor(nome: string) {
+        this.nome = nome;
+    }
+
+    // Método que pode ser utilizado pelas classes filhas
+    apresentar() {
+        console.log(`Olá, meu nome é ${this.nome}`);
+    }
+}
+
+
+// Classe filha de Pessoa5
+// "extends" significa que Professor herda de Pessoa5
+class Professor extends Pessoa5 {
+
+    // Método próprio do Professor
+    ensinar() {
+        console.log(`${this.nome} está ensinando...`);
+    }
+}
+
+
+// Outra classe filha de Pessoa5
+class Aluno extends Pessoa5 {
+
+    // Método próprio do Aluno
+    estudar() {
+        console.log(`${this.nome} está estudando`);
+    }
+}
+
+
+// Criando um objeto Professor
+const prof = new Professor("Sidzoka");
+
+// O Professor herdou o método apresentar()
+prof.apresentar();
+
+// Método próprio do Professor
+prof.ensinar();
+
+
+// Criando um objeto Aluno
+const aluno = new Aluno("Eduardo");
+
+// O Aluno também herdou apresentar()
+aluno.apresentar();
+
+// Método próprio do Aluno
+aluno.estudar();
+
+
+// =====================================================
+// EXERCÍCIO 2 - FUNCIONÁRIO
+// =====================================================
+
+// Classe pai
+class Funcionario {
+    nome: string;
+    salario: number;
+
+    constructor(nome: string, salario: number) {
+        this.nome = nome;
+        this.salario = salario;
+    }
+
+    // Método que mostra o salário
+    mostrarSalario() {
+        console.log(`${this.nome} recebe R$${this.salario}`);
+    }
+}
+
+
+// Gerente é uma classe filha de Funcionario
+class Gerente extends Funcionario {
+
+    // Método específico do Gerente
+    aumentarSalario() {
+        this.salario += 10;
+
+        console.log(
+            `${this.nome} recebeu um aumento de salário: R$${this.salario}`
+        );
+    }
+}
+
+
+// Estagiário também é uma classe filha de Funcionario
+class Estagiario extends Funcionario {
+
+    // Método específico do Estagiário
+    receberNovoSalario() {
+        this.salario += 100;
+
+        console.log(
+            `${this.nome} recebeu um pequeno aumento: R$${this.salario}`
+        );
+    }
+}
+
+
+// Criando um objeto Gerente
+const gerente = new Gerente("Jian", 5000);
+
+// Método herdado de Funcionario
+gerente.mostrarSalario();
+
+// Método próprio de Gerente
+gerente.aumentarSalario();
+
+
+// Criando um objeto Estagiário
+const estagiario = new Estagiario("Luiz", 600);
+
+// Método herdado de Funcionario
+estagiario.mostrarSalario();
+
+// Método próprio de Estagiario
+estagiario.receberNovoSalario();
+
+
+// =====================================================
+// PESQUISA
+// =====================================================
+
+/*
+3 exemplos do mundo real que poderiam ser representados
+com herança:
+
+1. ANIMAL
+   ├── Cão
+   ├── Gato
+   └── Pássaro
+
+2. EMPREGADO
+   ├── Gerente
+   ├── Programador
+   └── Designer
+
+3. VEÍCULO
+   ├── Carro
+   ├── Moto
+   └── Caminhão
+
+
+QUAL A DIFERENÇA ENTRE CLASSE PAI E CLASSE FILHA?
+
+A classe pai, também chamada de superclasse,
+define atributos e métodos mais gerais.
+
+A classe filha, também chamada de subclasse,
+herda essas características da classe pai e pode
+adicionar seus próprios atributos e métodos.
+
+
+LINGUAGENS QUE POSSUEM HERANÇA EM POO:
+
+Além do TypeScript, algumas linguagens que utilizam
+herança são:
+
+- Java
+- C++
+- C#
+- Python
