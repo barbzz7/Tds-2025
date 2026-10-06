@@ -1,0 +1,150 @@
+// =====================================================
+// PESQUISA
+// =====================================================
+
+/*
+1. Qual a principal diferença entre classe abstrata e interface?
+
+INTERFACE:
+Define a estrutura que uma classe deve seguir, como propriedades
+e métodos. Ela normalmente define apenas as assinaturas,
+sem implementar o comportamento.
+
+CLASSE ABSTRATA:
+Também pode definir métodos e propriedades, mas pode possuir
+implementações prontas que serão aproveitadas pelas classes filhas.
+
+Além disso, uma classe pode implementar várias interfaces,
+enquanto só pode herdar de uma classe.
+*/
+
+
+/*
+2. Em quais casos você escolheria uma classe abstrata
+ao invés de uma interface?
+
+Quando várias classes compartilharem códigos ou métodos em comum,
+podemos usar uma classe abstrata.
+
+Também podemos usar quando as classes possuem atributos em comum,
+como nome, idade, etc.
+*/
+
+
+// =====================================================
+// CLASSE ABSTRATA ANIMAL
+// =====================================================
+
+// "abstract" significa que essa classe serve como um modelo.
+// Não podemos criar diretamente um objeto Animal.
+abstract class Animal {
+
+    // O constructor recebe o nome do animal
+    constructor(public nome: string) {}
+
+    // Método abstrato.
+    // As classes filhas são obrigadas a implementar esse método.
+    abstract falar(): void;
+}
+
+
+// Classe Cachorro herda de Animal
+class Cachorro extends Animal {
+
+    // Implementação do método abstrato falar()
+    falar(): void {
+        console.log(`Au au!`);
+    }
+}
+
+
+// Classe Gato também herda de Animal
+class Gato extends Animal {
+
+    // Cada animal pode ter sua própria implementação
+    falar(): void {
+        console.log(`Miau!`);
+    }
+}
+
+
+// Cria um objeto Cachorro
+const dog = new Cachorro("Ragnar");
+
+// Chama o método falar()
+dog.falar();
+
+
+// Cria um objeto Gato
+const cat = new Gato("Anakin");
+
+// Chama o método falar()
+cat.falar();
+
+
+console.log("-----------------");
+
+
+// =====================================================
+// INTERFACE VEÍCULO
+// =====================================================
+
+/*
+A interface define o que todo veículo precisa possuir:
+
+- marca
+- modelo
+- método acelerar()
+*/
+
+interface Veiculo {
+    marca: string;
+    modelo: string;
+    acelerar(): void;
+}
+
+
+// A classe Carro implementa a interface Veiculo
+class Carro implements Veiculo {
+
+    // Define marca e modelo
+    constructor(
+        public marca: string,
+        public modelo: string
+    ) {}
+
+    // Implementa o método exigido pela interface
+    acelerar(): void {
+        console.log(
+            `${this.marca} modelo ${this.modelo} está acelerando...`
+        );
+    }
+}
+
+
+// A classe Moto também implementa Veiculo
+class Moto implements Veiculo {
+
+    constructor(
+        public marca: string,
+        public modelo: string
+    ) {}
+
+    // Implementa o método acelerar()
+    acelerar(): void {
+        console.log(
+            `${this.marca} modelo ${this.modelo} está acelerando...`
+        );
+    }
+}
+
+
+// Cria uma Moto
+const moto = new Moto("Royal Enfield", "Hunter 350");
+
+// Cria um Carro
+const auto = new Carro("Toyota", "Corolla");
+
+// Chama os métodos
+auto.acelerar();
+moto.acelerar();
