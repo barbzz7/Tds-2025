@@ -1,0 +1,97 @@
+// Cria uma função chamada dobrar
+// Recebe um número e retorna um número
+function dobrar(n: number): number {
+
+    // Multiplica o número por 2 e retorna o resultado
+    return n * 2;
+}
+
+// Chama a função passando o número 5
+console.log(dobrar(5));
+
+
+// Cria uma função chamada saudacao
+// Recebe um nome como texto (string)
+// E retorna uma string
+function saudacao(nome: string): string {
+
+    // Monta a mensagem usando o nome recebido
+    return "Olá, " + nome;
+}
+
+// Chama a função passando "Erica"
+console.log(saudacao("Erica"));
+
+
+// Cria um array contendo nomes de amigos
+const amigos = [
+    "Erduardo",
+    "Luiz do front",
+    "Sid do beck",
+    "kalleozada",
+    "tio jiann"
+];
+
+// Percorre cada nome do array usando forEach
+amigos.forEach((nome) => {
+
+    // Mostra cada nome no console
+    console.log(nome);
+});
+
+
+// Cria uma tupla que pode armazenar:
+// primeiro valor = string
+// segundo valor = number
+let pessoaTupla: [string, number];
+
+// Define os valores da tupla
+pessoaTupla = ["lua", 17];
+
+// Mostra o nome, que está na posição 0
+console.log("Nome:", pessoaTupla[0]);
+
+// Mostra a idade, que está na posição 1
+console.log("Idade:", pessoaTupla[1]);
+
+
+// Cria um enum para representar níveis de acesso
+enum Acesso {
+    ADMIN,
+    USER,
+    GUEST
+}
+
+// Mostra o valor correspondente ao índice 0
+// e o valor de GUEST
+console.log(Acesso[0], Acesso.GUEST);
+
+
+// Cria um objeto pessoa com propriedades tipadas
+const pessoa: {
+    nome: string;
+    idade: number;
+    email: string;
+} = {
+
+    // Define o nome como string
+    nome: "sidizoka",
+
+    // Define a idade como número
+    idade: 600,
+
+    // Define o e-mail como string
+    email: "sidizoka@dobeck.com"
+};
+
+// Mostra o objeto completo no console
+console.log(pessoa);
+
+
+// Cria uma função que nunca retorna um valor
+// O tipo "never" indica que a função nunca termina normalmente
+function erro(): never {
+
+    // Interrompe a execução lançando um erro
+    throw new Error("Algo deu errado!");
+}
