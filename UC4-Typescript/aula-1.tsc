@@ -1,0 +1,75 @@
+// Cria uma classe chamada ContaBancaria
+class ContaBancaria {
+
+  // Define o saldo como privado
+  // Isso impede que ele seja acessado diretamente fora da classe
+  private saldo: number;
+
+  // Define o saldo inicial da conta
+  constructor(saldoInicial: number) {
+    this.saldo = saldoInicial;
+  }
+
+  // Método público usado para fazer depósitos
+  public depositar(valor: number): void {
+
+    // Verifica se o valor do depósito é maior que zero
+    if (valor > 0) {
+
+      // Adiciona o valor ao saldo
+      this.saldo += valor;
+
+      // Mostra uma mensagem informando que o depósito foi realizado
+      console.log(`Depósito de R$${valor} realizado!`);
+
+    } else {
+
+      // Informa que o valor do depósito é inválido
+      console.log("Valor inválido para depósito.");
+    }
+  }
+
+  // Método público usado para realizar saques
+  public sacar(valor: number): void {
+
+    // Verifica se existe saldo suficiente
+    if (valor <= this.saldo) {
+
+      // Retira o valor do saldo
+      this.saldo -= valor;
+
+      // Mostra uma mensagem confirmando o saque
+      console.log(`Saque de R$${valor} realizado!`);
+
+    } else {
+
+      // Informa que não existe saldo suficiente
+      console.log("Saldo insuficiente!");
+    }
+  }
+
+  // Método público usado para consultar o saldo
+  public consultarSaldo(): void {
+
+    // Mostra o saldo atual da conta
+    console.log(`Saldo atual: R$${this.saldo}`);
+  }
+}
+
+
+// Cria uma conta bancária com saldo inicial de R$1000
+const minhaConta = new ContaBancaria(1000);
+
+// Faz um depósito de R$500
+minhaConta.depositar(500);
+
+// Faz um saque de R$200
+minhaConta.sacar(200);
+
+// Consulta o saldo atual da conta
+minhaConta.consultarSaldo();
+
+
+// Não é possível acessar o saldo diretamente,
+// porque ele foi definido como privado.
+// console.log(minhaConta.saldo);
