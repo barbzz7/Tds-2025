@@ -1,0 +1,165 @@
+// EXEMPLO
+// Cria uma classe chamada Personagem
+class Personagem {
+    nome: string;
+    poder: number;
+
+    // Define os valores iniciais do personagem
+    constructor(nome: string, poder: number) {
+        this.nome = nome;
+        this.poder = poder;
+    }
+
+    // Método para realizar um ataque
+    atacar() {
+        console.log(`${this.nome} atacou com um poder de ${this.poder}`);
+    }
+
+    // Método para fazer o personagem flutuar
+    flutuar() {
+        console.log(`${this.nome} flutuou!`);
+    }
+}
+
+
+// Cria objetos a partir da classe Personagem
+const saitama = new Personagem("Saitama", 500000);
+const goku = new Personagem("Goku", 8001);
+const anakin = new Personagem("Darth Vader", 27000);
+
+
+// Chama os métodos dos personagens
+saitama.atacar();
+goku.atacar();
+anakin.flutuar();
+anakin.atacar();
+
+
+// =====================================================
+// PESQUISA
+// =====================================================
+
+/*
+2 exemplos da vida real que poderiam ser representados
+como classes em Programação Orientada a Objetos:
+
+CELULAR:
+Atributos: marca, modelo, armazenamento, bateria e sistemaOperacional.
+Métodos: ligar(), desligar() e tirarFoto().
+
+ALUNO:
+Atributos: nome, idade, matrícula, curso e notas.
+Métodos: estudar(), calcularMedia() e seApresentar().
+
+
+COMPARAÇÃO ENTRE POO E PROGRAMAÇÃO FUNCIONAL:
+
+POO:
+É mais voltada para representar entidades e seus comportamentos
+através de classes e objetos.
+
+Programação Funcional:
+É mais voltada para transformar e manipular dados usando funções,
+dando preferência a funções puras.
+
+
+LINGUAGENS QUE USAM FORTEMENTE POO:
+
+Java:
+Utiliza bastante classes e objetos na criação dos programas.
+
+C++:
+Muito usada em jogos, sistemas embarcados e aplicações
+que precisam de alto desempenho.
+*/
+
+
+// =====================================================
+// PRÁTICA - CLASSE NINJA
+// =====================================================
+
+// Cria uma classe chamada Ninja
+class Ninja {
+    nome: string;
+    aldeia: string;
+    jutsos: string[];
+
+    // Define os valores iniciais do ninja
+    constructor(nome: string, aldeia: string, jutsos: string[]) {
+        this.nome = nome;
+        this.aldeia = aldeia;
+        this.jutsos = jutsos;
+    }
+
+    // Método que mostra os jutsos utilizados pelo ninja
+    usarJutsu() {
+        console.log(`${this.nome} usou os jutsus: ${this.jutsos}`);
+    }
+}
+
+
+// Cria um objeto Ninja chamado Kakashi
+const Kakashi = new Ninja(
+    "Kakashi",
+    "da aldeia da folha",
+    [
+        "Bomba do Dragão de Água 🐉",
+        "Chidori ❌",
+        "Estilo Água: Técnica da Bomba do Tubarão de Água 🦈"
+    ]
+);
+
+
+// Cria um objeto Ninja chamado Zabuza
+const Zabuza = new Ninja(
+    "Zabuza",
+    "da aldeia da névoa",
+    [
+        "Técnica da Grande Cachoeira 🚿",
+        "Espada Rotativa Voadora ⚔️",
+        "Suirō no Jutsu 🪼"
+    ]
+);
+
+
+// Chama o método dos dois ninjas
+Zabuza.usarJutsu();
+Kakashi.usarJutsu();
+
+
+// =====================================================
+// CLASSE HERÓI
+// =====================================================
+
+// Cria uma classe chamada Heroi
+class Heroi {
+    nome: string;
+    poder: number;
+    universo: string;
+
+    // Define os valores iniciais do herói
+    constructor(nome: string, poder: number, universo: string) {
+        this.nome = nome;
+        this.poder = poder;
+        this.universo = universo;
+    }
+
+    // Método para realizar um ataque
+    atacar() {
+        console.log(
+            `${this.nome} do universo da ${this.universo} atacou com o poder de: ${this.poder}`
+        );
+    }
+}
+
+
+// Cria um objeto Batman a partir da classe Heroi
+const Batman = new Heroi("Batman", 5000, "DC");
+
+// Cria um objeto Homem-Aranha a partir da classe Heroi
+const homemaranha = new Heroi("Homem-Aranha", 4888, "Marvel");
+
+
+// Chama o método atacar de cada herói
+Batman.atacar();
+homemaranha.atacar();
